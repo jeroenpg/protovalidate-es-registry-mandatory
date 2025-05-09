@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package playground;
+	
+import "buf/validate/validate.proto";
+
+message Person {
+  string name = 1 [(buf.validate.field).required = true];
+  Address address = 2 [(buf.validate.field).required = true];
+}
+
+message Address {
+  string address = 1 [(buf.validate.field).required = true];
+  string city = 2 [(buf.validate.field).required = true];
+  string state = 3 [(buf.validate.field).required = true];
+  string postal_code = 4 [(buf.validate.field).required = true];
+}

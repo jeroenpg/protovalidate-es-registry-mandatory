@@ -1,0 +1,33 @@
+{
+  "name": "protovalidate-es-registry-mandatory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx src/index.js",
+    "gen:proto": "buf generate",
+    "buf:update": "buf dep update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeroenpg/protovalidate-es-registry-mandatory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeroenpg/protovalidate-es-registry-mandatory/issues"
+  },
+  "homepage": "https://github.com/jeroenpg/protovalidate-es-registry-mandatory#readme",
+  "dependencies": {
+    "@bufbuild/buf": "^1.48.0",
+    "@bufbuild/protobuf": "^2.3.0",
+    "@bufbuild/protovalidate": "^0.1.0",
+    "tsx": "^4.19.4"
+  },
+  "devDependencies": {
+    "@bufbuild/protoc-gen-es": "^2.2.3",
+    "@bufbuild/protoplugin": "^2.2.3"
+  }
+}

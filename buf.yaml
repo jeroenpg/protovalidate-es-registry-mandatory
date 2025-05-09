@@ -1,0 +1,14 @@
+version: v2
+modules:
+  - path: src
+    name: buf.build/saleslane/node-backend
+
+deps:
+  - buf.build/bufbuild/protovalidate:v0.11.0
+
+lint:
+  use:
+    - BASIC
+breaking:
+  use:
+    - FILE
